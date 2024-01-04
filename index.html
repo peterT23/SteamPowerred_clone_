@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a class="logo-image" href="/">
+            <img
+              class="logo-image-img"
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+              alt="steam-logo"
+            />
+          </a>
+        </div>
+        <div class="name-of-filter">
+          <h1 id="display-game-name">ALL GAMES</h1>
+        </div>
+        <div class="nav">
+          <nav>
+            <li type="none"><a href="/">Home</a></li>
+            <li type="none">Trending</li>
+            <li type="none">About Us</li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-body">
+        <div class="search-box">
+          <div class="search-box-input">
+            <h2 id="search-box-title" class="title">Searh For Game</h2>
+            <form onsubmit="search(event)" class="search-and-button">
+              <input class="input-box" type="text" placeholder="Search" />
+              <button type="submit" class="seach-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="search-category" id="put-genres">
+            <ul>
+              <!-- <li type="none">Action</li>
+              <li type="none">Free to play</li>
+              <li type="none">Strategy</li>
+              <li type="none">Adventure</li>
+              <li type="none">Indie</li>
+              <li type="none">RPG</li>
+              <li type="none">Animation & Modeling</li>
+              <li type="none">Video Production</li>
+              <li type="none">Casual</li>
+              <li type="none">Simulation</li>
+              <li type="none">Racing</li>
+              <li type="none">Violent</li>
+              <li type="none">Massively multiplayer</li>
+              <li type="none">Nudity</li>
+              <li type="none">Sports</li>
+              <li type="none">Utilities</li>
+              <li type="none">Design & Illustration</li>
+              <li type="none">Web Publishing</li>
+              <li type="none">Education</li>
+              <li type="none">Software Training</li>
+              <li type="none">Sexual content</li>
+              <li type="none">Audio production</li>
+              <li type="none">Game Development</li>
+              <li type="none">Photo Editing</li>
+              <li type="none">Acounting</li>
+              <li type="none">Documentary</li>
+              <li type="none">Tutorial</li> -->
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="game-display-area" id="add-game">
+            <!-- <div class="game-display">
+                  <img id="image-game-id" src="" alt="image of game" />
+                  <div class="name-of-the-game">
+                    <p class="game-name">
+                      Game 111111 1111 111111 1118888 88888 8888888 666 6666
+                    </p>
+                    <p class="game-price">2$</p>
+                  </div> -->
+            <!-- <div class="detail-game-display">
+                    <div class="game-name">
+                        <h1 id="detail-game-name">Game Name</h1>
+                        <h2 id="detail-genres">Genres of Game</h2>
+                        <h3 id="detail-game-price">$10</h3>
+                        
+                    </div>
+                    <div class="gamevisual-container">
+                        <div class="game-visual-image-discription">
+                            <div class="game-visual-image">
+                                <img class="image-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1476970/header.jpg?t=1698005603" alt="game.name">
+                            </div>
+                            <div class="game-visual-discription">
+                                <p class="game-discription">game discripttion</p>
+                                <p class="game-information">game information</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="taggame-name-container">
+                        <div>Popular user-defined tags for this product:</div>
+                        <div class="list-of-tag">
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li> 
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li>
+                            <li class="tagname-game" type="none">tag game</li>
+                            
+                        </div>
+                    </div>
+
+                  </div>
+                   -->
+          </div>
+          <div id="load-more-div">
+            <button onclick="loadMore()" id="load-more">Load more ⛛</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
