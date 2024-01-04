@@ -175,7 +175,8 @@ const renderDetailGame = async () => {
   <h2 id="detail-genres">${gameRender.genres[0]},${gameRender.genres[1]},${gameRender.genres[2]}</h2>
   <h3 id="detail-game-price">$${gameRender.price}</h3>
   
-</div>
+
+</div>s
 <div class="gamevisual-container">
   <div class="game-visual-image-discription">
       <div class="game-visual-image">
