@@ -8,7 +8,19 @@ const displayGame = document.getElementById("add-game");
 let displayGameName = document.getElementById("display-game-name");
 let inputGenres = "";
 /////....create genres function
-
+const next = () => {
+  page += 1;
+  displayGame.innerHTML = "";
+  renderGameOnScreen();
+};
+const prev = () => {
+  page <= 1 ? (page = 1) : (page -= 1);
+  // window.location.href = "index2.html";
+  // if (page <= 1) page = 1;
+  // if (page > 1) page -= 1;xs
+  displayGame.innerHTML = "";
+  renderGameOnScreen();
+};
 function genRes(parameterIn) {
   // console.log(parameterIn);
   displayGame.innerHTML = "";
@@ -174,8 +186,6 @@ const renderDetailGame = async () => {
   <h1 id="detail-game-name">${gameRender.name}</h1>
   <h2 id="detail-genres">${gameRender.genres[0]},${gameRender.genres[1]},${gameRender.genres[2]}</h2>
   <h3 id="detail-game-price">$${gameRender.price}</h3>
-  
-
 </div>s
 <div class="gamevisual-container">
   <div class="game-visual-image-discription">
@@ -187,23 +197,14 @@ const renderDetailGame = async () => {
           <p class="game-information">Game developer: ${gameRender.developer[0]}</p>
          
           <p class="game-information">requied Age : ${gameRender.required_age}</p>
-          <p class="game-information">operating system :${gameRender.platforms}</p>
-
-
-          
+          <p class="game-information">operating system :${gameRender.platforms}</p>     
       </div>
-
   </div>
 </div>
 <div class="taggame-name-container">
   <div>Popular user-defined tags for this product:</div>
   <div id = "taggame-name-container-list">
-  
   </div>
-     
-      
-      
-  
 </div>`;
 
   displayGame.innerHTML = "";
